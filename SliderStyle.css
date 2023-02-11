@@ -1,0 +1,195 @@
+body {
+   background-color: #ececec;
+   font-family: 'Roboto', sans-serif;
+}
+
+.heading,
+.second-heading {
+   text-align: center;
+   margin-top: 50px;
+   color: #2d312f;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-size: 30px;
+   letter-spacing: 1px;
+}
+
+.second-heading {
+   margin-top: 0px;
+   font-size: 25px;
+   text-align: left;
+   color: #e6513b;
+}
+
+.post-box {
+   margin-top: 40px;
+   width: 100%;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.05) 0px 8px 32px;
+   position: relative;
+   overflow: hidden;
+}
+
+.bg-left {
+   background-image: url(./Photos/left.png);
+   width: 100%;
+   height: 100%;
+   background-repeat: no-repeat;
+   background-position: left;
+   position: absolute;
+   bottom: -157px;
+   left: -124px;
+}
+
+.bg-right {
+   background-image: url(./Photos/right.png);
+   width: 100%;
+   height: 100%;
+   background-repeat: no-repeat;
+   background-position: right;
+   position: absolute;
+   bottom: -199px;
+   right: -360px;
+}
+
+.heading-box {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 30px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   border-top: 10px solid #e6513b;
+}
+
+.bs-icons {
+   display: flex;
+   gap: 20px;
+   font-size: 30px;
+}
+
+.bs-icons .Arrow {
+   cursor: pointer;
+   margin-top: -10px;
+}
+
+.pagination-slide {
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+}
+
+.pagination-slide .swiper-paginations {
+   font-size: 18px;
+   margin-right: 30px;
+   margin-top: 10px;
+}
+
+/* Card Style */
+
+.post-card {
+   padding: 30px;
+}
+
+.post-card .card {
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   max-width: 400px;
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+.post-card .card img {
+   height: 150px;
+   object-fit: fill;
+   object-position: center;
+}
+
+.post-card .card .card-body {
+   padding: 8px;
+}
+
+.post-card .card .card-body .card-title {
+   font-weight: 500;
+   font-size: 16px;
+   color: #444;
+   text-align: justify;
+}
+
+.post-card .card .card-body .card-text {
+   font-weight: 300;
+   color: #666;
+   font-size: 14px;
+   text-align: justify;
+}
+
+.btn-group {
+   display: flex;
+   align-items: stretch;
+   flex-direction: column;
+   gap: 7px;
+   text-align: center;
+   width: 100%;
+   margin-top: 8px;
+}
+
+.btn-custom {
+   text-decoration: none;
+   color: #fff;
+   background-color: #e6513b;
+   padding: 5px 10px;
+   font-size: 14px;
+   border-radius: 7px;
+   transition: 0.5s;
+}
+
+.btn-custom:nth-child(2) {
+   background-color: #00b704;
+}
+
+.btn-custom:hover {
+   color: #fff;
+   background-color: #333;
+   transition: 0.5s;
+}
+
+.disabled {
+   cursor: default !important;
+   opacity: 0.5;
+}
+
+/* Media Query */
+
+@media (max-width: 768px) {
+   .heading {
+      font-size: 20px;
+   }
+   .second-heading {
+      font-size: 16px;
+   }
+   .bs-icons {
+      font-size: 20px;
+      gap: 15px;
+   }
+   .pagination-slide .swiper-paginations {
+      font-size: 16px;
+      margin-right: 10px;
+   }
+}
+
+@media (max-width: 305px) {
+   .second-heading {
+      font-size: 14px;
+   }
+
+   .bs-icons {
+      font-size: 16px;
+      gap: 10px;
+   }
+
+   .pagination-slide .swiper-paginations {
+      font-size: 14px;
+      margin-right: 8px;
+   }
+}
